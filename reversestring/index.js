@@ -22,4 +22,10 @@ function reverse(str) {
     return reversedStr;
 }
 
+// SOLUTION 3
+function reverse(str) {
+    return str.split('').reduce((acc, val) => val + acc,'')
+}
+
+
 module.exports = reverse;
